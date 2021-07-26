@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    background: linear-gradient(-45deg, rgb(20, 20, 20), rgb(0, 52, 87), rgb(20, 20, 20));
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    color: #171b1f;
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
+}
+
+.title {
+    font-size: 1.8em;
+    margin-bottom: 10%;
+}
+
+.input {
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #171a1d solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input input {
+    width: 80%;
+    border: none;
+    outline: none;
+    color: #171b1f;
+}
+
+#btn {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#btn button {
+    font-family: 'Poppins', 'sans-serif';
+    background: linear-gradient(-45deg, rgb(20, 20, 20), rgb(0, 52, 87), rgb(20, 20, 20) );
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn button:hover {
+    background: linear-gradient(-45deg, rgb(32, 31, 31), rgb(7, 8, 8), rgb(43, 42, 42));
+}
+
+@keyframes iniciar {
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    100%{
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+
+    }
+}
